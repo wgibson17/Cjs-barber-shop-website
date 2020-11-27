@@ -4,6 +4,7 @@ Messing around trying to make a decent website for my barber. he works alone so 
 but will resereach for the future.
 
 To do list:
-Positioning of items
-Larger icons
-mobile compatability
+Positioning of items,
+Larger icons,
+mobile compatability,
+Instagram/Facebook feed <-- important
