@@ -1,0 +1,99 @@
+
+body {
+  font-family: Alfa Slab One, sans-serif;
+  background: url(london-barber-shops.jpg) center center/cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  display: block;
+  position: static;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  top: 0;
+  left: 0;
+}
+
+li a {
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  top: 0;
+  left: 0;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  color: white;
+  background-color: #111;
+}
+
+h1 {
+  font-size: 55px;
+  text-align: center;
+  margin-top: 220px;
+  text-shadow: 2px 2px #336699;
+}
+
+img {
+  width: 150px;
+  height: auto;
+  padding: 15px;
+}
+
+@keyframes fade {
+  0%   {color: blue;}
+  33%  {color: white;}
+  66%  {color: red;}
+  100% {color: blue;}
+}
+
+/* The element to apply the animation to */
+.fade {
+  animation-name: fade;
+  animation-duration: 10s;
+  animation-duration: normal;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+p {
+  text-align: center;
+  font-size: 35px;
+  text-shadow: 1px 1px black;
+}
+
+.about-container {
+  margin-top: 350px;
+  text-align: center;
+}
+
+.about-container a {
+  font-size: 35px;
+  color: #80dfff;
+  text-shadow: 2px 2px black;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.about-container a:hover {
+  color: blue;
+
+}
