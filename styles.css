@@ -65,6 +65,7 @@
                 
                 .hamburger:focus {
                     outline: none;
+                    background-color: rgba(3, 3, 3, 0.25);
                 }
                 
                 .home-container {
