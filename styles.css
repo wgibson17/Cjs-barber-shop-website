@@ -247,12 +247,16 @@
                 
                 @media only screen and (max-width: 850px) {
                     /* ------------------------ All Titles ------------------*/
+                    h2 {
+                        font-size: 2.2em;
+                        top: 15%;
+                        z-index: 0;
+                    }
                     .home-title,
                     .contact-title,
                     .services-title,
-                    .about-title,
-                    h2 {
-                        font-size: 2.2em;
+                    .about-title {
+                        font-size: 2.5em;
                         top: 15%;
                         z-index: 0;
                     }
