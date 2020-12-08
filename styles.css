@@ -98,7 +98,7 @@
                     text-decoration: none;
                     position: absolute;
                     top: 85%;
-                    width: 60%;
+                    width: 40%;
                     height: 10%;
                     cursor: pointer;
                 }
@@ -267,7 +267,7 @@
                     }
                     .nav-ul.show {
                         display: flex;
-                        position: absolute;
+                        position: fixed;
                         z-index: 1;
                     }
                     .about-para {
