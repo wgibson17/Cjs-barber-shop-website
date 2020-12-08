@@ -12,6 +12,7 @@
                     background: url(woodtexture.jpg);
                     z-index: -2;
                 }
+                /* vvvvvvvvvvvvvvvvvvvvv Nav Menu vvvvvvvvvvvvvvvvvvvvvvv*/
                 
                 .nav-container {
                     width: 100%;
@@ -51,6 +52,7 @@
                 .right-nav .icon-img:hover {
                     background-color: rgb(88, 86, 86);
                 }
+                /* vvvvvvvvvvvvvvvvvvvvvv Java Hamburger Menu vvvvvvvvvvvvvvvvvvvvv */
                 
                 .hamburger {
                     background-color: transparent;
@@ -66,6 +68,7 @@
                     outline: none;
                     background-color: rgba(3, 3, 3, 0.25);
                 }
+                /*vvvvvvvvvvvvvvvvvvvvv Home Landing vvvvvvvvvvvvvvvvvvvvvvvv*/
                 
                 .home-container {
                     display: flex;
@@ -112,6 +115,7 @@
                     color: rgb(0, 0, 0);
                     font-size: 2.5rem;
                 }
+                /* vvvvvvvvvvvvvvvvvvvvvvvvv About Landing vvvvvvvvvvvvvvvvvvvvvv*/
                 
                 .about-container {
                     width: 100%;
@@ -145,6 +149,7 @@
                     padding: 20px;
                     grid-row: span 1;
                 }
+                /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvv Services Landing vvvvvvvvvvvvvvvvvvvvvvvvv*/
                 
                 .services-container {
                     width: 100%;
@@ -185,6 +190,7 @@
                 tr:hover {
                     background-color: rgba(99, 99, 99, 0.75);
                 }
+                /* vvvvvvvvvvvvvvvvvvvv Contact Landing vvvvvvvvvvvvvvvvvvvvvvvvv*/
                 
                 .contact-container {
                     width: 100%;
@@ -223,6 +229,7 @@
                     font-family: Courgette, cursive;
                     text-shadow: 2px 2px black;
                 }
+                /* ------------------------ Bottom Social Icons ------------------*/
                 
                 .social-imgs {
                     width: 100%;
@@ -237,6 +244,7 @@
                 }
                 
                 @media only screen and (max-width: 850px) {
+                    /* ------------------------ All Titles ------------------*/
                     .home-title,
                     .contact-title,
                     .services-title,
@@ -246,13 +254,16 @@
                         top: 15%;
                         z-index: 0;
                     }
+                    /* ------------------------ Home Paragraph ------------------*/
                     p.home-para {
                         font-size: 2.00em;
                         top: 60%;
                     }
+                    /* ------------------------ Appointment Button ------------------*/
                     .appointment-text {
                         font-size: 2.0em;
                     }
+                    /* ------------------------ Javascript Hamburger ------------------*/
                     .hamburger {
                         display: block;
                         position: fixed;
@@ -270,6 +281,7 @@
                         position: fixed;
                         z-index: 1;
                     }
+                    /* ------------------------ About Landing ------------------*/
                     .about-para {
                         font-size: 1.5em;
                     }

@@ -1,6 +1,6 @@
-const hamburger = document.getElementById('hamburger');
-const navUL = document.getElementById('nav-ul');
+const hamburger = document.getElementById('hamburger'); // targets the hamburger icon
+const navUL = document.getElementById('nav-ul'); // targets the nav list
 
-hamburger.addEventListener('click', () => {
-    navUL.classList.toggle('show');
+hamburger.addEventListener('click', () => { // listens for clicking of hamburger
+    navUL.classList.toggle('show'); //adds show class to .nav-ul
 });
