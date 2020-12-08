@@ -28,7 +28,6 @@
                 }
                 
                 .nav-ul li a {
-                    display: inline-block;
                     float: left;
                     align-items: center;
                     color: rgb(5, 0, 0);
@@ -149,7 +148,7 @@
                 
                 .services-container {
                     width: 100%;
-                    height: 100vh;
+                    height: 90vh;
                     background-color: rgba(96, 64, 32, 0.7);
                     z-index: 1;
                     display: flex;
