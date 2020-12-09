@@ -1,297 +1,302 @@
-                * {
-                    font-family: Lobster, sans-serif;
-                }
-                
-                html {
-                    scroll-behavior: smooth;
-                }
-                
-                body {
-                    margin-left: 10%;
-                    margin-right: 10%;
-                    background: url(woodtexture.jpg);
-                    z-index: -2;
-                }
-                /* vvvvvvvvvvvvvvvvvvvvv Nav Menu vvvvvvvvvvvvvvvvvvvvvvv*/
-                
-                .nav-container {
-                    width: 100%;
-                }
-                
-                ul {
-                    position: fixed;
-                    width: 80%;
-                    list-style-type: none;
-                    margin: 0;
-                    padding: 0;
-                    overflow: hidden;
-                    background-color: rgba(253, 253, 253, .75);
-                }
-                
-                .nav-ul li a {
-                    float: left;
-                    align-items: center;
-                    color: rgb(5, 0, 0);
-                    text-align: center;
-                    padding: 14px 16px;
-                    text-decoration: none;
-                    cursor: pointer;
-                    font-size: 1.5em;
-                }
-                
-                li a:hover {
-                    background-color: rgb(88, 86, 86);
-                }
-                
-                .right-nav .icon-img {
-                    width: 2.5em;
-                    padding: 10px 14px;
-                    float: right;
-                }
-                
-                .right-nav .icon-img:hover {
-                    background-color: rgb(88, 86, 86);
-                }
-                /* vvvvvvvvvvvvvvvvvvvvvv Java Hamburger Menu vvvvvvvvvvvvvvvvvvvvv */
-                
-                .hamburger {
-                    background-color: transparent;
-                    display: none;
-                    border: 0;
-                    color: #FFFFFF;
-                    font-size: 30px;
-                    z-index: 10;
-                    cursor: pointer;
-                }
-                
-                .hamburger:focus {
-                    outline: none;
-                    background-color: rgba(3, 3, 3, 0.25);
-                }
-                /*vvvvvvvvvvvvvvvvvvvvv Home Landing vvvvvvvvvvvvvvvvvvvvvvvv*/
-                
-                .home-container {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background: url(barbershop.jpg), rgba(133, 139, 139, 0.25);
-                    background-blend-mode: lighten;
-                    width: 100%;
-                    height: 100vh;
-                }
-                
-                .home-title {
-                    font-size: 4.5rem;
-                    color: rgb(0, 0, 0);
-                    position: absolute;
-                    top: 5%;
-                    text-shadow: 3px 3px white;
-                }
-                
-                p.home-para {
-                    color: white;
-                    font-size: 2.5em;
-                    position: absolute;
-                    top: 72%;
-                    text-shadow: 3px 2px black;
-                    text-align: center;
-                }
-                /* -----------vvvv------ appointment button ------vvvv-------*/
-                
-                .appointment-button {
-                    text-decoration: none;
-                    position: absolute;
-                    top: 85%;
-                    width: 40%;
-                    height: 10%;
-                    cursor: pointer;
-                }
-                
-                .appointment-button:hover {
-                    background-color: gray;
-                }
-                
-                .appointment-text {
-                    text-decoration: none;
-                    color: rgb(0, 0, 0);
-                    font-size: 2.5rem;
-                }
-                /* vvvvvvvvvvvvvvvvvvvvvvvvv About Landing vvvvvvvvvvvvvvvvvvvvvv*/
-                
-                .about-container {
-                    width: 100%;
-                    background-color: rgba(100, 100, 100, 0.8);
-                    z-index: 1;
-                    display: grid;
-                    grid-row: 1fr 1fr;
-                    grid-column: 1fr 1fr;
-                }
-                
-                .about-title {
-                    font-size: 4.5rem;
-                    text-shadow: 2px 2px #FFFFFF;
-                    grid-column: span 2;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-                
-                .about-para {
-                    font-family: Courgette, cursive;
-                    font-size: 2rem;
-                    color: white;
-                    text-shadow: 2px 2px black;
-                    align-items: center;
-                    justify-content: center;
-                    grid-row: span 1;
-                }
-                /* vvvvvvvvvv About div image vvvvvv*/
-                
-                .about-img {
-                    padding: 50px;
-                    grid-row: span 1;
-                }
-                /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvv Services Landing vvvvvvvvvvvvvvvvvvvvvvvvv*/
-                
-                .services-container {
-                    width: 100%;
-                    height: 90vh;
-                    background-color: rgba(96, 64, 32, 0.7);
-                    z-index: 1;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                }
-                
-                .services-title {
-                    font-size: 5.5rem;
-                    color: rgb(0, 0, 0);
-                    text-shadow: 2px 2px white;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-                
-                h2 {
-                    font-size: 4.5rem;
-                    color: rgb(0, 0, 0);
-                    text-shadow: 2px 2px white;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-                /* ---------vvvv---------- Service Pricing table -------vvvv-------*/
-                
-                .services-table {
-                    width: 40%;
-                    font-size: 2.5rem;
-                }
-                
-                th {
-                    border-bottom: 2px solid white;
-                }
-                
-                tr:hover {
-                    background-color: rgba(99, 99, 99, 0.75);
-                }
-                /* vvvvvvvvvvvvvvvvvvvv Contact Landing vvvvvvvvvvvvvvvvvvvvvvvvv*/
-                
-                .contact-container {
-                    width: 100%;
-                    height: auto;
-                    background-color: rgba(248, 247, 247, 0.2);
-                }
-                
-                .flex-container {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
-                
-                .contact-title {
-                    font-size: 3.5rem;
-                    color: rgb(0, 0, 0);
-                    text-shadow: 1px 1px white;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-                
-                .contact-h3 {
-                    font-size: 2.5rem;
-                    font-family: Courgette, cursive;
-                    color: rgb(255, 255, 255);
-                    text-shadow: 2px 2px black;
-                    padding: 0;
-                    margin: 0;
-                    border-bottom: 8px solid black;
-                    border-radius: 90%;
-                }
-                
-                .contact-para {
-                    font-size: 1.75rem;
-                    color: white;
-                    font-family: Courgette, cursive;
-                    text-shadow: 2px 2px black;
-                }
-                /* -------vvvvv---------- Bottom Social Icons ----vvvvv---------*/
-                
-                .social-imgs {
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-                
-                .social-imgs img {
-                    width: 4.5rem;
-                    padding: 20px;
-                }
-                
-                @media only screen and (max-width: 850px) {
-                    /* ------------------------ All Titles ------------------*/
-                    .home-title {
-                        font-size: 2.2em;
-                        top: 15%;
-                        z-index: 0;
-                    }
-                    h2,
-                    .contact-title,
-                    .services-title,
-                    .about-title {
-                        font-size: 2.5em;
-                        top: 15%;
-                        z-index: 0;
-                    }
-                    /* ------------------------ Home Paragraph ------------------*/
-                    p.home-para {
-                        font-size: 2.00em;
-                        top: 60%;
-                    }
-                    /* ------------------------ Appointment Button ------------------*/
-                    .appointment-text {
-                        font-size: 2.0em;
-                    }
-                    /* ------------------------ Javascript Hamburger ------------------*/
-                    .hamburger {
-                        display: block;
-                        position: fixed;
-                        top: 2%;
-                        left: 2%;
-                    }
-                    .nav-ul {
-                        display: none;
-                        flex-direction: column;
-                        width: 80%;
-                        align-items: center;
-                    }
-                    .nav-ul.show {
-                        display: flex;
-                        position: fixed;
-                        z-index: 1;
-                    }
-                    /* ------------------------ About Landing ------------------*/
-                    .about-para {
-                        font-size: 1em;
-                    }
-                    .about-img {
-                        width: 60%;
-                    }
-                }
+* {
+  font-family: Lobster, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+  background: url(woodtexture.jpg);
+  z-index: -2;
+}
+
+/* vvvvvvvvvvvvvvvvvvvvv Nav Menu vvvvvvvvvvvvvvvvvvvvvvv*/
+.nav-container {
+  width: 100%;
+}
+
+ul {
+  position: fixed;
+  width: 80%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(253, 253, 253, .75);
+}
+
+.nav-ul li a {
+  float: left;
+  align-items: center;
+  color: rgb(5, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+li a:hover {
+  background-color: rgb(88, 86, 86);
+}
+
+.right-nav .icon-img {
+  width: 2.5em;
+  padding: 10px 14px;
+  float: right;
+}
+
+.right-nav .icon-img:hover {
+  background-color: rgb(88, 86, 86);
+}
+
+/* vvvvvvvvvvvvvvvvvvvvvv Java Hamburger Menu vvvvvvvvvvvvvvvvvvvvv */
+.hamburger {
+  background-color: transparent;
+  display: none;
+  border: 0;
+  color: #FFFFFF;
+  font-size: 30px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.hamburger:focus {
+  outline: none;
+  background-color: rgba(3, 3, 3, 0.25);
+}
+
+/*vvvvvvvvvvvvvvvvvvvvv Home Landing vvvvvvvvvvvvvvvvvvvvvvvv*/
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(barbershop.jpg), rgba(133, 139, 139, 0.25);
+  background-blend-mode: lighten;
+  width: 100%;
+  height: 100vh;
+}
+
+.home-title {
+  font-size: 4.5rem;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 5%;
+  text-shadow: 3px 3px white;
+}
+
+p.home-para {
+  color: white;
+  font-size: 2.5em;
+  position: absolute;
+  top: 72%;
+  text-shadow: 3px 2px black;
+  text-align: center;
+}
+
+/* -----------vvvv------ appointment button ------vvvv-------*/
+.appointment-button {
+  text-decoration: none;
+  position: absolute;
+  top: 85%;
+  width: 40%;
+  height: 10%;
+  cursor: pointer;
+}
+
+.appointment-button:hover {
+  background-color: gray;
+}
+
+.appointment-text {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 2.5rem;
+}
+
+/* vvvvvvvvvvvvvvvvvvvvvvvvv About Landing vvvvvvvvvvvvvvvvvvvvvv*/
+.about-container {
+  width: 100%;
+  background-color: rgba(100, 100, 100, 0.8);
+  z-index: 1;
+  display: grid;
+  grid-row: 1fr 1fr;
+  grid-column: 1fr 1fr;
+}
+
+.about-title {
+  font-size: 4.5rem;
+  text-shadow: 2px 2px #FFFFFF;
+  grid-column: span 2;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-para {
+  font-family: Courgette, cursive;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 2px 2px black;
+  align-items: center;
+  justify-content: center;
+  grid-row: span 1;
+}
+
+/* vvvvvvvvvv About div image vvvvvv*/
+.about-img {
+  padding: 50px;
+  grid-row: span 1;
+}
+
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvv Services Landing vvvvvvvvvvvvvvvvvvvvvvvvv*/
+.services-container {
+  width: 100%;
+  height: 90vh;
+  background-color: rgba(96, 64, 32, 0.7);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-title {
+  font-size: 5.5rem;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  font-size: 4.5rem;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------vvvv---------- Service Pricing table -------vvvv-------*/
+.services-table {
+  width: 40%;
+  font-size: 2.5rem;
+}
+
+th {
+  border-bottom: 2px solid white;
+}
+
+tr:hover {
+  background-color: rgba(99, 99, 99, 0.75);
+}
+
+/* vvvvvvvvvvvvvvvvvvvv Contact Landing vvvvvvvvvvvvvvvvvvvvvvvvv*/
+.contact-container {
+  width: 100%;
+  height: auto;
+  background-color: rgba(248, 247, 247, 0.2);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-title {
+  font-size: 3.5rem;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-h3 {
+  font-size: 2.5rem;
+  font-family: Courgette, cursive;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px black;
+  padding: 0;
+  margin: 0;
+  border-bottom: 8px solid black;
+  border-radius: 90%;
+}
+
+.contact-para {
+  font-size: 1.75rem;
+  color: white;
+  font-family: Courgette, cursive;
+  text-shadow: 2px 2px black;
+}
+
+/* -------vvvvv---------- Bottom Social Icons ----vvvvv---------*/
+.social-imgs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-imgs img {
+  width: 4.5rem;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 850px) {
+  /* ------------------------ All Titles ------------------*/
+  .home-title {
+    font-size: 2.2em;
+    top: 15%;
+    z-index: 0;
+  }
+
+  h2, .contact-title, .services-title, .about-title {
+    font-size: 2.5em;
+    top: 15%;
+    z-index: 0;
+  }
+
+  /* ------------------------ Home Paragraph ------------------*/
+  p.home-para {
+    font-size: 2.00em;
+    top: 60%;
+  }
+
+  /* ------------------------ Appointment Button ------------------*/
+  .appointment-text {
+    font-size: 2.0em;
+  }
+
+  /* ------------------------ Javascript Hamburger ------------------*/
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 2%;
+    left: 2%;
+  }
+
+  .nav-ul {
+    display: none;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+  }
+
+  .nav-ul.show {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+  }
+
+  /* ------------------------ About Landing ------------------*/
+  .about-para {
+    font-size: 1em;
+  }
+
+  .about-img {
+    width: 60%;
+  }
+}
