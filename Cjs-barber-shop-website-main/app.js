@@ -6,7 +6,7 @@ $(document).ready(function() {
         userId: 'YOURUSERID',
         limit: 10,
         resolution: 'standard_resolution',
-        accessToken: 'IGQVJXRjRjYnBrNWl5R25KVi0yNXJ3eFkySmdrSlpmNk5YcUFZARTBKd0J4cVB4ZAzBmaW5mb3kzNnFyX1ByQTI5alhLMXlmSW9aemNUVlJaR0ZAhZAElYX0Rkc3phTm55X3d1X09idDlZAVjJZAemFQZAG1TXwZDZD',
+        accessToken: 'IGQVJWOTVvdzhISkRPWjVlUWttNWpZAOXFPSi1oZAGNNbmNhQXo4MW9rdUszOUlYZAXJBamlTbGRUY24zODhEZADlDYW1VbEEzOE82dmM3c1NSN1ZADYjhnc2VWQ3QwQTJaWjhRRXI2SUhJNGJqNUptNTJCTgZDZD',
         sortBy: 'most-recent',
         template: '<div class="col-lg-3 instaimg"><a href="{{image}}" title="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a></div>',
     });
