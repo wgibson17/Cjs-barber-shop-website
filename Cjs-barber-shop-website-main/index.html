@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
+    <title>CJ Small Barber Shop</title>
+</head>
+
+<body>
+    <div class="nav-container">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-ul" id="nav-ul">
+                <li>
+                    <a class="active" href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <div class="right-nav">
+                    <a href="https://www.facebook.com" target="_blank"><img src="black-fb.png" class="icon-img"></a>
+                    <a href="https://www.instagram.com/cj_small_barbershop/" target="_blank"><img src="black-insta.png" class="icon-img"></a>
+                    <a href="mailto:"><img src="email-black.png" class="icon-img" style="float: right"></a>
+                    <a href="#contact"><img src="phone-black.png" class="icon-img"></a>
+                    <p>Call for An Appointment!</p>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <div class="home-container" id="home">
+        <h1 class="home-title">CJ Small Barber Shop</h1>
+        <p class="home-para">Providing quality service since 2016</p>
+        <div class="instagram-container" id="instafeed-container">
+            <!--- instagram feed vvvv -->
+            <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+            <script type="text/javascript">
+                var userFeed = new Instafeed({
+                    get: 'user',
+                    target: "instafeed-container",
+                    resolution: 'low_resolution',
+                    accessToken: 'IGQVJXRjRjYnBrNWl5R25KVi0yNXJ3eFkySmdrSlpmNk5YcUFZARTBKd0J4cVB4ZAzBmaW5mb3kzNnFyX1ByQTI5alhLMXlmSW9aemNUVlJaR0ZAhZAElYX0Rkc3phTm55X3d1X09idDlZAVjJZAemFQZAG1TXwZDZD'
+                });
+                userFeed.run();
+            </script>
+            <!--- instagram feed ^^^^^ -->
+        </div>
+        <button class="appointment-button"><a class="appointment-text" href="#contact">Make an Appointment</a></a>
+        </button>
+    </div>
+    <div class="about-container" id="about">
+        <h1 class="about-title">CJ's Story</h1>
+        <img class="about-img" src="Capture.jpg">
+        <p class="about-para">CJ has been serving the Lacey Township area since 2016. CJ takes a lot of pride in providing his customers with quality services and insuring they are pleased with the outcome. He provides a personal and welcoming atmostphere and style.
+        </p>
+    </div>
+    <div class="services-container" id="services">
+        <h1 class="services-title">Services</h1>
+        <table class="services-table">
+            <tr>
+                <td>Haircuts</td>
+                <td>$$</td>
+            </tr>
+            <tr>
+                <td>Kids</td>
+                <td>$$</td>
+            </tr>
+            <tr>
+                <td>Beard Trim</td>
+                <td>$$</td>
+            </tr>
+            <tr>
+                <td>Shaves</td>
+                <td>$$</td>
+            </tr>
+        </table>
+        <h2>*Cash Only*</h2>
+    </div>
+    <div class="contact-container" id="contact">
+        <div class="flex-container">
+            <h1 class="contact-title">Get In Touch!..</h1>
+            <h3 class="contact-h3">Hours</h3>
+            <p class="contact-para">Sun-Mon: Closed</p>
+            <p class="contact-para">Tues-Fri: 9am - 7pm</p>
+            <p class="contact-para">Sat: 9am - 3pm</p>
+            <h3 class="contact-h3">Located</h3>
+            <p class="contact-para">Lacey Township, NJ</p>
+            <h3 class="contact-h3">Call or Text <br> For an Appointment</h3>
+            <p class="contact-para">888-888-8888</p>
+        </div>
+        <div class="social-imgs">
+            <a href="https://www.instagram.com/cj_small_barbershop/" target="_blank"><img src="white-instagram.png"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="black-fb.png"></a>
+            <a href="mailto:"><img src="email-icon-white.png"></a>
+        </div>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
