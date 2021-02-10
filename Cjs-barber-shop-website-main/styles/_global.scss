@@ -1,0 +1,46 @@
+* {
+    font-family: Lobster, sans-serif;
+    -webkit-overflow-scrolling: touch;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 90%;
+    margin: auto;
+}
+
+body {
+    margin: auto;
+    background: url(images/woodtexture.jpg), rgba(0, 0, 0, .5);
+    background-blend-mode: darken;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 850px) {
+    /* ------------------------ All Titles ------------------*/
+    html {
+        font-size: 55%;
+    }
+    .home-title {
+        z-index: 0;
+    }
+    /* ------------------------  Hamburger ------------------*/
+    .nav-ul {
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        align-items: center;
+        z-index: 2;
+        margin: auto;
+    }
+    /* ------------------------ Instagram feed ------------------*/
+    .instagram-container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 30vh;
+        padding: 10px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+}

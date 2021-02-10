@@ -1,0 +1,32 @@
+/* ----------vv----- About Landing -----vvvv-----*/
+
+.about-container {
+    width: 100%;
+    background-color: rgba(100, 100, 100, 0.8);
+    z-index: 1;
+    display: grid;
+    grid-row: 1fr 1fr;
+    grid-column: 1fr 1fr;
+    .about-title {
+        font-size: 4.5rem;
+        text-shadow: 2px 2px #FFFFFF;
+        grid-column: span 2;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-para {
+        font-family: Courgette, cursive;
+        font-size: 2rem;
+        color: white;
+        text-shadow: 2px 2px black;
+        align-items: center;
+        justify-content: center;
+        grid-row: span 1;
+    }
+    /* -----vv--- About div image ----vv----*/
+    .about-img {
+        padding: 2rem;
+        grid-row: span 1;
+        width: 80%;
+    }
+}

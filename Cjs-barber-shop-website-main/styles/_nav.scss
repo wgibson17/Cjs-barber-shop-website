@@ -1,0 +1,88 @@
+    .nav-container {
+        width: 100%;
+        margin: auto;
+        ul {
+            position: fixed;
+            width: 90%;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgba(253, 253, 253, .88);
+            border: 4px solid black;
+        }
+        .nav-ul li a {
+            float: left;
+            align-items: center;
+            color: rgb(5, 0, 0);
+            text-align: center;
+            padding: 14px 16px;
+            margin: 0;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 1.5em;
+            &:hover {
+                color: rgb(88, 86, 86);
+            }
+        }
+        /* ---------vvv----- Right side icons top Nav bar ---------vvv----- */
+        .right-nav .icon-img {
+            width: 2.5em;
+            padding: 12px 12px;
+            float: right;
+            &:hover {
+                filter: opacity(.5);
+            }
+        }
+        .right-nav p {
+            font-size: 1.5rem;
+            margin: 0;
+            padding: 14px 0px 14px 16px;
+            text-align: center;
+        }
+        /* ----------vvv-------  Hamburger Menu ------------vvvv---- */
+        .checkbtn {
+            background-color: transparent;
+            float: right;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            color: #FFFFFF;
+            font-size: 30px;
+            z-index: 10;
+            cursor: pointer;
+            display: none;
+        }
+        #check {
+            display: none;
+        }
+        .checkbtn:focus {
+            outline: none;
+            background-color: rgba(3, 3, 3, 0.25);
+        }
+        /* --------vvv----- media Query for NAV bar ---vvvv----*/
+        @media (max-width: 850px) {
+            .checkbtn {
+                display: flex;
+                position: fixed;
+                top: 2%;
+                left: 5%;
+            }
+            ul {
+                left: -100%;
+                transition: all 0.5s;
+            }
+            nav ul li {
+                display: block;
+            }
+            nav ul li a {
+                font-size: 2rem;
+            }
+            #check:checked~.nav-ul {
+                display: flex;
+                left: 3%;
+                top: 6%;
+                height: 40vh;
+            }
+        }
+    }
