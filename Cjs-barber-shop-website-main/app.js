@@ -1,28 +1,40 @@
-$(document).ready(function() {
-
-    //work around for Instagram api that allows you to see previous posts
-    var userFeed = new Instafeed({
-        get: 'user',
-        userId: 'YOURUSERID',
-        limit: 10,
-        resolution: 'standard_resolution',
-        accessToken: 'IGQVJWOTVvdzhISkRPWjVlUWttNWpZAOXFPSi1oZAGNNbmNhQXo4MW9rdUszOUlYZAXJBamlTbGRUY24zODhEZADlDYW1VbEEzOE82dmM3c1NSN1ZADYjhnc2VWQ3QwQTJaWjhRRXI2SUhJNGJqNUptNTJCTgZDZD',
-        sortBy: 'most-recent',
-        template: '<div class="col-lg-3 instaimg"><a href="{{image}}" title="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a></div>',
-    });
-
-
-    userFeed.run();
-
-
-    // This will create a single gallery from all elements that have class "gallery-item"
-    $('.gallery').magnificPopup({
-        type: 'image',
-        delegate: 'a',
-        gallery: {
-            enabled: true
-        }
-    });
-
-
+var userFeed = new Instafeed({
+    get: 'user',
+    target: "instafeed-container",
+    limit: 12,
+    resolution: 'low_resolution',
+    accessToken: 'IGQVJWOTVvdzhISkRPWjVlUWttNWpZAOXFPSi1oZAGNNbmNhQXo4MW9rdUszOUlYZAXJBamlTbGRUY24zODhEZADlDYW1VbEEzOE82dmM3c1NSN1ZADYjhnc2VWQ3QwQTJaWjhRRXI2SUhJNGJqNUptNTJCTgZDZD'
 });
+userFeed.run();
+
+// T-Shirt Image Gallery 
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    captionText.innerHTML = dots[slideIndex - 1].alt;
+}
